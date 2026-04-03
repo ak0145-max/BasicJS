@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Akif - C241091</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <header>
+            <h1>Mohammed Akif</h1>
+            <p class="id-tag">ID: C241091</p>
+        </header>
+
+        <div class="projects-grid">
+
+            <!-- 1. Number Guessing Game -->
+            <div class="project-card">
+                <h2>1. Number Guessing Game</h2>
+                <div class="game-area">
+                    <p class="instruction">Guess the secret number between 1 to 100</p>
+                    <input type="number" id="guess-input" placeholder="Enter your guess" min="1" max="100">
+                    <div class="btn-group">
+                        <button id="guess-btn">Guess Now</button>
+                        <button id="reset-btn">New Game</button>
+                    </div>
+                    <div id="guess-result" class="result"></div>
+                    <div class="tries">Attempts: <span id="try-count">0</span></div>
+                </div>
+            </div>
+
+            <!-- 2. Unit Converter -->
+            <div class="project-card">
+                <h2>2. Length Unit Converter</h2>
+                <div class="converter-area">
+                    <input type="number" id="value-input" placeholder="Enter value">
+                    <select id="from-unit">
+                        <option value="km">Kilometer</option>
+                        <option value="m" selected>Meter</option>
+                        <option value="cm">Centimeter</option>
+                        <option value="mm">Millimeter</option>
+                    </select>
+                    <div class="results">
+                        <p>km: <span id="km">0</span></p>
+                        <p>m: <span id="m">0</span></p>
+                        <p>cm: <span id="cm">0</span></p>
+                        <p>mm: <span id="mm">0</span></p>
+                    </div>
+                    <div id="converter-error" class="error"></div>
+                </div>
+            </div>
+
+            <!-- 3. Bangladesh Digital Clock -->
+            <div class="project-card clock-card">
+                <h2>3. Bangladesh Digital Clock</h2>
+                <div class="clock-area">
+                    <div id="clock" class="clock">00:00:00</div>
+                    <div id="ampm" class="ampm">PM</div>
+                    <div id="greeting" class="greeting">Good Evening</div>
+                    <p class="timezone">Dhaka Time (GMT+6)</p>
+                </div>
+            </div>
+
+            <!-- 4. Smart Form Validator -->
+            <div class="project-card">
+                <h2>4. Smart Form Validator</h2>
+                <form id="validation-form">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" id="name" placeholder="Enter full name">
+                        <span id="name-error" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" id="email" placeholder="your@email.com">
+                        <span id="email-error" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Age</label>
+                        <input type="number" id="age" placeholder="Your age">
+                        <span id="age-error" class="error"></span>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms">
+                        <label for="terms">I agree to the terms and conditions</label>
+                        <span id="terms-error" class="error"></span>
+                    </div>
+                    <button type="button" id="submit-btn">Submit Application</button>
+                    <div id="form-success" class="success"></div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
